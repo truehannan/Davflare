@@ -46,8 +46,7 @@ Official guide: [Pages Git integration](https://developers.cloudflare.com/pages/
 `wrangler.toml` binds R2 as `BUCKET` (default bucket name `webdav`). Change `bucket_name` to your bucket if needed.
 
 ```bash
-npm run build
-npx wrangler pages deploy build
+npm run deploy
 ```
 
 Do **not** run `npx wrangler deploy` against this repo — that is the Workers path and will complain that no entry point is configured.

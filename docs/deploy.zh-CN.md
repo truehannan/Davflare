@@ -46,8 +46,7 @@ Cloudflare **没有**与 Workers「一键 Deploy」对等的官方 Pages 按钮�
 `wrangler.toml` 将 R2 绑定为 `BUCKET`（默认 bucket 名为 `webdav`）。如有需要，把 `bucket_name` 改成你的 bucket。
 
 ```bash
-npm run build
-npx wrangler pages deploy build
+npm run deploy
 ```
 
 **不要**对本仓库执行 `npx wrangler deploy`——那是 Workers 路径，会报没有配置 entry point。
